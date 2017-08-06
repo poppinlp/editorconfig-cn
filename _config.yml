@@ -1,0 +1,5 @@
+title: "EditorConfig 中文翻译"
+description: "EditorConfig 帮助开发者在不同的编辑器和 IDE 之间定义和维护一致的编码风格。"
+url: http://poppinlp.com/editorconfig-cn
+permalink: pretty
+exclude: [ 'README.md', '.gitignore', '.editorconfig' ]

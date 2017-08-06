@@ -1,0 +1,57 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>EditorConfig{% if page.title %}: {{ page.title }}{% endif %}</title>
+
+  <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}EditorConfig Team{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+</head>
+
+<body>
+<div class="container">
+
+  <div id="sidebar">
+    <div itemscope itemtype="http://schema.org/Organization">
+      <a class="logo" href="{{ site.baseurl }}/"><img itemprop="logo" src="{{ site.baseurl }}/logo.png" alt="EditorConfig mouse head"></a>
+    </div>
+    <nav>
+    <ol data-scrollspy="scrollspy">
+      <li><a href="{{ site.baseurl }}/#overview">什么是 EditorConfig？</a></li>
+      <li><a href="{{ site.baseurl }}/#example-file">示例文件</a></li>
+      <li><a href="{{ site.baseurl }}/#file-location">文件位置</a></li>
+      <li><a href="{{ site.baseurl }}/#file-format-details">文件格式</a></li>
+      <li><a href="{{ site.baseurl }}/#download">下载插件</a></li>
+    </ol>
+    </nav>
+
+    <a href="https://github.com/editorconfig/" target="_blank" class="button">GitHub 原项目</a>
+    <a href="https://github.com/poppinlp/editorconfig-cn" target="_blank" class="button">GitHub 翻译项目</a>
+  </div>
+
+  <div id="content">
+
+    <header>
+      <h1>EditorConfig</h1>
+    </header>
+    <div id="main" role="main">
+      {{ content }}
+    </div>
+
+    <footer>
+      EditorConfig 网站使用 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a> 许可证。
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>
